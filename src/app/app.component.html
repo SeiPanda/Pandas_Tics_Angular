@@ -1,0 +1,8 @@
+  <app-header [players]="players"></app-header>
+  <div id="tr_inner">
+    <div id="number-container">
+      <button class="number-container-item buttonBlock-item" [disabled]="field.clicked" [ngStyle]="{'box-shadow': field.win ? 'inset -1px -2px 14px 11px #3ed5d5' : 'inset 3px 2px 9px 0px #9c9c9c'}" (click)="onField(field)" *ngFor="let field of fields"><span [ngClass]="field.sign === 'o' ? 'circle' : 'rectangle'">{{field.sign}}</span></button>
+    </div>
+  </div>
+
+<

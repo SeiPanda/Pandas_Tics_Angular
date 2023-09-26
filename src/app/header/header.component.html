@@ -1,0 +1,9 @@
+<div class="player" id="player1" [ngClass]="players[0].isNextTurn ? 'circle' : 'rectangle'" [ngStyle]="{'color': players[0].currentTurn ? '' : 'black'}">
+  <div>{{players[0].name}}</div>
+  <div>{{players[0].wins}}</div>
+</div>
+<div id="heading">Pandas Tic`s</div>
+<div class="player" id="player2" [ngClass]="players[1].isNextTurn ? 'circle' : 'rectangle'" [ngStyle]="{'color': players[1].currentTurn ? '' : 'black'}">
+  <div>{{players[1].name}}</div>
+  <div>{{players[1].wins}}</div>
+</div>
